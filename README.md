@@ -22,7 +22,7 @@ Podemos utilizar o seguinte comando para rodar a imagem:
 docker-compose up -d
 ```
 
-Para acompanhar a subida da aplicações, rode cada comando em um terminal:
+Para acompanhar a subida da aplicações, rode cada comando em um terminal separado:
 ```
 docker logs db -f
 ```
@@ -36,6 +36,6 @@ docker logs nginx -f
 ## Inserindo registros
 
 Para cadastrar novos registros, execute o comando abaixo, informando o nome da pessoa no body do request:
-````
+```
 curl -X POST http://localhost:8080/v1/people -H "Content-Type: application/json" -d '{ "name" : "nome1" }'
 ```
